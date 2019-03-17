@@ -168,9 +168,9 @@ void AP_MotorsTri::output_armed_stabilizing()
     //_thrust_left = roll_thrust * 0.5f + pitch_thrust * 1.0f;
     //_thrust_rear = 0;
 
-    _thrust_right = roll_thrust * -0.5f + pitch_thrust * 0.5f;
-    _thrust_left = roll_thrust * 0.5f + pitch_thrust * 0.5f;
-    _thrust_rear = pitch_thrust * -0.5f;
+    _thrust_right = roll_thrust * 0.5f + pitch_thrust * -0.5f;
+    _thrust_left = roll_thrust * -0.5f + pitch_thrust * -0.5f;
+    _thrust_rear = pitch_thrust * 0.5f;
 
     // calculate roll and pitch for each motor
     // set rpy_low and rpy_high to the lowest and highest values of the motors
